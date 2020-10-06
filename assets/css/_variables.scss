@@ -1,0 +1,27 @@
+// Colors
+$primary_light_blue: #00BFFF;
+$primary_mid_blue: #0090FF;
+$primary_dark_blue: #037AD7;
+$primary_darker_blue: #00508E;
+$primary_gradient_to_right: linear-gradient(236.44deg, #0090FF 2.51%, #00508E 81.77%);
+$primary_gradient_tp_top: linear-gradient(180deg, #095C9D -92.13%, #02233D 134.52%), #00508E;
+$primary_gray: #050303;
+
+// Box shadow
+$shadow_title: 5px 5px 12px rgba(0, 0, 0, 0.25);
+$shadow_img: 0px 4px 19px rgba(0, 0, 0, 0.25);
+// Fonts
+$stevia: stevie-sans, sans-serif;
+
+// Images path
+$global: "assets/images/global";
+$home: "assets/images/home";
+
+// mixins
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
