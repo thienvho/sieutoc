@@ -83,11 +83,12 @@ body {
 		padding-bottom: 15px;
 		background: #fff;
 		.navbar-brand {
+			margin-left: -60px;
 			transition: all .4s ease-out;
 			img {
 				transition: all .4s ease-out;
-				max-height: 40px;
-				width: auto;
+				max-width: 120px;
+				height: auto;
 			}
 		}
 	}
