@@ -19,7 +19,10 @@ body {
 	font-size: 36px;
 }
 .font-72 {
-	font-size: 72px;
+	font-size: 48px;
+	@media (min-width: 992px) {
+		font-size: 72px;
+	}
 }
 .font-regular {
 	font-weight: 400;
@@ -52,18 +55,21 @@ body {
 
 // buttons
 .button {
-	padding: .75rem 2rem;
+	padding: .875rem 2rem .75rem 2rem;
 	border: 2px solid $main_blue;
 	color: $main_blue;
 	font-weight: bold;
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	display: block;
 	&:hover {
 		text-decoration: none;
 		background: $main_blue;
 		color: #fff;
+	}
+	@media (min-width: 992px) {
+		display: inline-block;
 	}
 }
 // Navigation
@@ -245,25 +251,24 @@ body {
 
 // hero-section
 .hero-section {
-	min-height: 860px;
+	min-height: 660px;
+	padding-top: 180px;
+	background: $lighter_gray;
 	.heading-container {
 		@media (min-width: 992px) {
-			padding-top: 300px;
+			padding-top: 200px;
 			padding-bottom: 300px;
 		}
 	}
 	.main-heading {
-		line-height: 82px;
+		line-height: 60px;
+		@media (min-width: 992px) {
+			line-height: 82px;
+		}
+
 	}
 	.hero-image {
-		height: 660px;
-		position: absolute;
-		margin-bottom: -380px;
-		bottom: 50%;
-		right: 0;
-		background: $gray;
-		z-index: -1;
-
+		display: none;
 		.hero-image-inner {
 			height: 100%;
 			width: 100%;
@@ -277,6 +282,23 @@ body {
 				bottom: 0;
 			}
 		}
+
+		@media (min-width: 992px) {
+			display: block;
+			height: 660px;
+			min-height: 860px;
+			position: absolute;
+			margin-bottom: -360px;
+			bottom: 50%;
+			right: 0;
+			background: $gray;
+			z-index: -1;
+		}
+	}
+
+	@media (min-width: 992px) {
+		background: none;
+		min-height: 860px;
 	}
 }
 
