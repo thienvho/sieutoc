@@ -77,23 +77,6 @@ body {
 }
 // Navigation
 .main-nav {
-	
-	&.__active {
-		padding-top: 15px;
-		padding-bottom: 15px;
-		background: #fff;
-		.navbar-brand {
-			top: 10px;
-			margin-left: -60px;
-			transition: all .4s ease-out;
-			img {
-				transition: all .4s ease-out;
-				max-width: 120px;
-				height: auto;
-			}
-		}
-	}
-	// end active state
 	transition: all .4s ease-out;
 	background: #fff;
 	max-width: 1440px;
@@ -132,29 +115,41 @@ body {
 			margin-left: -110px;
 		}
 	}
+
 	.navbar-nav {
 		.nav-item {
 			margin-right:0;
 			color: $gray;		
-	
+			
 			&:last-child {
 				margin-right: 0;
+			}
+			&.slogan {
+				color: $main_orange;
+				font-size: 1.25rem;
+				@media (min-width: 992px) {
+					font-size: 1rem;
+					color: $gray;
+				}
 			}
 			.nav-link {
 				outline: none;
 				border: none;
-				font-weight: 600;
-				font-size: 1rem;
+				font-weight: 700;
+				font-size: 1.2rem;
 				color: $gray;
 				transition: all .3s ease-out;
 				position: relative;
 				padding-left: 0;
 				padding-right: 0;
+				border-bottom: 1px solid $lighter_gray;
 				&:hover {
 					color: $main_orange;
 				}
 
 				@media (min-width: 992px) {
+					font-size: 1rem;
+					border-bottom: none;
 					&:not(.dropdown-toggle) {
 						&:before {
 							content: '';
@@ -224,11 +219,28 @@ body {
 		}
 	}
 
-	@media (min-width: 992px) {
+	@media (min-width: 992px) { 
+		/*for main nav*/
 		padding-top: 40px;
 		padding-bottom: 40px;
 		box-shadow: none;
 		border-bottom: 1px solid $lighter_gray;
+		&.__active {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background: #fff;
+			.navbar-brand {
+				top: 6px;
+				margin-left: -60px;
+				transition: all .4s ease-out;
+				img {
+					transition: all .4s ease-out;
+					max-width: 120px;
+					height: auto;
+				}
+			}
+		}
+		// end active state
 		&:before {
 			content: '';
 			background: #fff;
@@ -416,6 +428,10 @@ footer {
 			text-decoration: none;
 		}
 	}
+	.footer-heading {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
 	.footer-logo {
 		max-width: 180px;
 		img {
@@ -436,7 +452,8 @@ footer {
 			list-style: none;
 			flex-basis: 100%;
 			a {
-				font-weight: bold;
+				font-size: 16px;
+				font-weight: 600;
 				text-decoration: none;
 				&:hover {
 					text-decoration: underline;

@@ -1319,16 +1319,14 @@ body{font-family:"Epilogue",sans-serif,arial;font-size:14px;color:#333}
 .button{padding:.875rem 2rem .75rem 2rem;border:2px solid #1a5dab;color:#1a5dab;font-weight:bold;font-size:16px;line-height:16px;letter-spacing:1px;display:block}
 .button:hover{text-decoration:none;background:#1a5dab;color:#fff}
 .main-nav{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;background:#fff;max-width:1440px;padding:15px 10px;-webkit-box-shadow:0 0 20px 20px rgba(0,0,0,0.15);box-shadow:0 0 20px 20px rgba(0,0,0,0.15)}
-.main-nav.__active{padding-top:15px;padding-bottom:15px;background:#fff}
-.main-nav.__active .navbar-brand{top:10px;margin-left:-60px;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
-.main-nav.__active .navbar-brand img{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;max-width:120px;height:auto}
 .main-nav .navbar-toggler{border:0;border-radius:0;padding:0;outline:0}
 .main-nav .navbar-toggler .navbar-toggler-icon{width:32px}
 .main-nav .navbar-brand{padding:0;margin-right:0;position:absolute;top:6px;left:50%;margin-left:-60px;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
 .main-nav .navbar-brand img{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;height:auto;max-width:120px}
 .main-nav .navbar-nav .nav-item{margin-right:0;color:#333}
 .main-nav .navbar-nav .nav-item:last-child{margin-right:0}
-.main-nav .navbar-nav .nav-item .nav-link{outline:0;border:0;font-weight:600;font-size:1rem;color:#333;-webkit-transition:all .3s ease-out;transition:all .3s ease-out;position:relative;padding-left:0;padding-right:0}
+.main-nav .navbar-nav .nav-item.slogan{color:#f7a81b;font-size:1.25rem}
+.main-nav .navbar-nav .nav-item .nav-link{outline:0;border:0;font-weight:700;font-size:1.2rem;color:#333;-webkit-transition:all .3s ease-out;transition:all .3s ease-out;position:relative;padding-left:0;padding-right:0;border-bottom:1px solid #f5f5f5}
 .main-nav .navbar-nav .nav-item .nav-link:hover{color:#f7a81b}
 .main-nav .navbar-nav .nav-item .dropdown-menu{padding:0;border:0;border-radius:0}
 .main-nav .navbar-nav .nav-item .dropdown-menu .dropdown-menu-wrapper .dropdown-item{font-size:14px;padding:.75rem 1.25rem;border-bottom:1px solid #eee;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}
@@ -1356,12 +1354,13 @@ footer{background:#242424;padding-top:150px;padding-bottom:60px}
 footer p,footer a{color:#fff}
 footer a{text-decoration:underline}
 footer a:hover{color:#fff;text-decoration:none}
+footer .footer-heading{font-size:16px;letter-spacing:1px}
 footer .footer-logo{max-width:180px}
 footer .footer-logo img{max-width:180px}
 footer .colophon{color:#666}
 footer .footer-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-padding-start:0;padding-inline-start:0;padding:0}
 footer .footer-menu li{margin-bottom:20px;list-style:none;-ms-flex-preferred-size:100%;flex-basis:100%}
-footer .footer-menu li a{font-weight:bold;text-decoration:none}
+footer .footer-menu li a{font-size:16px;font-weight:600;text-decoration:none}
 footer .footer-menu li a:hover{text-decoration:underline}
 footer .social-icons{-webkit-padding-start:0;padding-inline-start:0;padding:0;margin:30px 0;display:-webkit-box;display:-ms-flexbox;display:flex}
 footer .social-icons li{margin-right:15px;list-style:none}
@@ -2030,6 +2029,8 @@ footer .footer-menu li{-ms-flex-preferred-size:50%;flex-basis:50%}
 .button{display:inline-block}
 .main-nav .navbar-brand img{max-width:220px}
 .main-nav .navbar-brand{position:absolute;left:50%;top:15px;margin-left:-110px}
+.main-nav .navbar-nav .nav-item.slogan{font-size:1rem;color:#333}
+.main-nav .navbar-nav .nav-item .nav-link{font-size:1rem;border-bottom:0}
 .main-nav .navbar-nav .nav-item .nav-link:not(.dropdown-toggle):before{content:'';height:1px;width:0;background:#f7a81b;position:absolute;left:0;bottom:4px;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}
 .main-nav .navbar-nav .nav-item .nav-link:not(.dropdown-toggle):hover:before{width:100%}
 .main-nav .navbar-nav .nav-item .dropdown-menu .dropdown-menu-wrapper{padding:10px 0}
@@ -2037,6 +2038,9 @@ footer .footer-menu li{-ms-flex-preferred-size:50%;flex-basis:50%}
 .main-nav .navbar-nav .nav-item .dropdown-menu{background:#fff;border-radius:4px;-webkit-box-shadow:0 -5px 30px rgba(0,0,0,0.15);box-shadow:0 -5px 30px rgba(0,0,0,0.15)}
 .main-nav .navbar-nav .nav-item{color:#333;margin-right:20px}
 .main-nav{padding-top:40px;padding-bottom:40px;-webkit-box-shadow:none;box-shadow:none;border-bottom:1px solid #f5f5f5}
+.main-nav.__active{padding-top:15px;padding-bottom:15px;background:#fff}
+.main-nav.__active .navbar-brand{top:6px;margin-left:-60px;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
+.main-nav.__active .navbar-brand img{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;max-width:120px;height:auto}
 .main-nav:before{content:'';background:#fff;border-bottom:1px solid #f5f5f5;height:100%;width:50%;position:absolute;bottom:-1px;left:-50%;z-index:0}
 .main-nav:after{content:'';background:#fff;border-bottom:1px solid #f5f5f5;height:100%;width:50%;position:absolute;bottom:-1px;right:-50%;z-index:0}
 .hero-section .heading-container{padding-top:200px;padding-bottom:300px}
