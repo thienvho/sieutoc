@@ -1320,7 +1320,7 @@ body{font-family:"Epilogue",sans-serif,arial;font-size:14px;color:#333}
 .button:hover{text-decoration:none;background:#1a5dab;color:#fff}
 .main-nav{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;background:#fff;max-width:1440px;padding:15px 10px;-webkit-box-shadow:0 0 20px 20px rgba(0,0,0,0.15);box-shadow:0 0 20px 20px rgba(0,0,0,0.15)}
 .main-nav.__active{padding-top:15px;padding-bottom:15px;background:#fff}
-.main-nav.__active .navbar-brand{margin-left:-60px;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
+.main-nav.__active .navbar-brand{top:10px;margin-left:-60px;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
 .main-nav.__active .navbar-brand img{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;max-width:120px;height:auto}
 .main-nav .navbar-toggler{border:0;border-radius:0;padding:0;outline:0}
 .main-nav .navbar-toggler .navbar-toggler-icon{width:32px}
