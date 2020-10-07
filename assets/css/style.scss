@@ -340,6 +340,9 @@ body {
 			text-align: center;
 			background: $light_blue;
 			padding: 40px 30px;
+			@media (min-width: 768px) {
+				flex-basis: calc(50% - 1px);
+			}
 			@media (min-width: 992px) {
 				flex-basis: calc(33.33% - 1px);
 			}
