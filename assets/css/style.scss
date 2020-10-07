@@ -49,6 +49,9 @@ body {
 .bg-main-orange {
 	background: $main_orange;
 }
+.bg-main-blue {
+	background: $main_blue;
+}
 .inner {
 	max-width: 1440px;
 }
@@ -318,6 +321,69 @@ body {
 	}
 }
 
+// steps
+.step-section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	.steps {
+		padding-inline-start: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		li {
+			transition: all .3s ease-out;
+			margin-bottom: 2px;
+			list-style: none;
+			flex-basis: 100%;
+			text-align: center;
+			background: $light_blue;
+			padding: 40px 30px;
+			@media (min-width: 992px) {
+				flex-basis: calc(33.33% - 1px);
+			}
+			.wrapper {
+				min-height: 300px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				font-size: 20px;
+				font-weight: medium;
+				color: #fff;
+
+				a {
+					color: #fff;
+					text-decoration: underline;
+				}
+				.number {
+					display: block;
+					height: 80px;
+					width: 80px;
+					border: 1px solid $main_orange;
+					color: $main_orange;
+					border-radius: 50%;
+					line-height: 90px;
+					text-align: center;
+					font-weight: bold;
+					font-size: 60px;
+					margin-bottom: 30px;
+				}
+			}
+			&:hover {
+				transition: all .3s ease-out;
+				background: $main_orange;
+				.wrapper {
+					.number {
+						color: #fff;
+						border: 1px solid #fff;
+					}
+				}
+			}
+		} //li
+	}
+}
 // pricing section
 .pricing-section {
 	background: $lighter_gray;
