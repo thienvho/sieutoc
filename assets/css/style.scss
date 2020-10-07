@@ -234,7 +234,7 @@ body {
 			height: 100%;
 			width: 50%;
 			position: absolute;
-			top: 0;
+			bottom: -1px;
 			left: -50%;
 			z-index: 0;
 		}
@@ -245,7 +245,7 @@ body {
 			height: 100%;
 			width: 50%;
 			position: absolute;
-			top: 0;
+			bottom: -1px;
 			right: -50%;
 			z-index: 0;
 		}
