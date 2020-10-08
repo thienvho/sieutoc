@@ -1338,7 +1338,7 @@ body{font-family:"Epilogue",sans-serif,arial;font-size:16px;line-height:1.5;colo
 .main-nav .navbar-nav .nav-item .dropdown-menu .dropdown-menu-wrapper .dropdown-item{font-size:16px;padding:.75rem 1.25rem;border-bottom:1px solid #eee;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}
 .main-nav .navbar-nav .nav-item .dropdown-menu .dropdown-menu-wrapper .dropdown-item:last-child{border-bottom:0}
 .main-nav .navbar-nav .nav-item .dropdown-menu .dropdown-menu-wrapper .dropdown-item:active{outline:0;background:#f7a81b}
-.hero-section{min-height:660px;padding-top:180px;background:#f5f5f5}
+.hero-section{min-height:660px;padding-top:100px;background:#f5f5f5}
 .hero-section .main-heading{line-height:50px}
 .hero-section .hero-image{display:none}
 .hero-section .hero-image .hero-image-inner{height:100%;width:100%}
