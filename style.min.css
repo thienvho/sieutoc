@@ -1302,9 +1302,12 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .hamburger--vortex-r.is-active .hamburger-inner::before{top:0;opacity:0}
 .hamburger--vortex-r.is-active .hamburger-inner::after{bottom:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 body{font-family:"Epilogue",sans-serif,arial;font-size:16px;line-height:1.5;color:#333}
+.font-epi{font-family:"Epilogue",sans-serif}
+.font-pia{font-family:"Piazzolla",serif}
 .font-16{font-size:16px}
 .font-20{font-size:20px}
 .font-36{font-size:36px}
+.font-42{font-size:42px}
 .font-60{font-size:40px}
 .font-72{font-size:48px}
 .font-regular{font-weight:400}
@@ -2047,7 +2050,7 @@ footer .footer-menu li{-ms-flex-preferred-size:50%;flex-basis:50%}
 .main-nav.__active .navbar-brand{top:9px;margin-left:-60px;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
 .main-nav.__active .navbar-brand img{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;max-width:120px;height:auto}
 .main-nav.__active .navbar-brand .slogan{display:none !important}
-.hero-section .heading-container{padding-top:200px;padding-bottom:200px}
+.hero-section .heading-container{padding-top:50px;padding-bottom:50px}
 .hero-section .main-heading{line-height:70px}
 .hero-section .hero-image{display:block;height:660px;min-height:860px;position:absolute;margin-bottom:-360px;bottom:50%;right:0;background:#333;z-index:-1}
 .hero-section{background:0;min-height:860px}
