@@ -1317,7 +1317,7 @@ body{font-family:"Epilogue",sans-serif,arial;font-size:16px;line-height:1.5;colo
 .bg-main-orange{background:#f7a81b}
 .bg-main-blue{background:#1a5dab}
 .inner{max-width:1440px}
-.button{padding:.875rem 2rem .75rem 2rem;border:2px solid #1a5dab;color:#1a5dab;font-weight:bold;font-size:16px;line-height:16px;letter-spacing:1px;display:block}
+.button{padding:.875rem 2rem .75rem 2rem;border:2px solid #1a5dab;color:#1a5dab;font-weight:bold;font-size:18px;line-height:18px;letter-spacing:1px;text-transform:uppercase;display:block}
 .button:hover{text-decoration:none;background:#1a5dab;color:#fff}
 .main-nav{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;background:#fff;max-width:1440px;padding:15px 10px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.1);box-shadow:0 0 10px 0 rgba(0,0,0,0.1)}
 .main-nav .navbar-toggler{border:0;border-radius:0;padding:0;outline:0}

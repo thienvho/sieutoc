@@ -74,9 +74,10 @@ body {
 	border: 2px solid $main_blue;
 	color: $main_blue;
 	font-weight: bold;
-	font-size: 16px;
-	line-height: 16px;
+	font-size: 18px;
+	line-height: 18px;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 	display: block;
 	&:hover {
 		text-decoration: none;
