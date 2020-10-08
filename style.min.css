@@ -1351,7 +1351,7 @@ body{font-family:"Epilogue",sans-serif,arial;font-size:16px;line-height:1.5;colo
 .step-section .steps li{-webkit-transition:all .3s ease-out;transition:all .3s ease-out;margin-bottom:2px;list-style:none;-ms-flex-preferred-size:100%;flex-basis:100%;text-align:center;background:#2073be;padding:40px 30px}
 .step-section .steps li .wrapper{min-height:300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;font-size:20px;font-weight:medium;color:#fff}
 .step-section .steps li .wrapper a{color:#fff;text-decoration:underline}
-.step-section .steps li .wrapper .number{display:block;height:80px;width:80px;border:1px solid #f7a81b;color:#f7a81b;border-radius:50%;line-height:90px;text-align:center;font-weight:bold;font-size:60px;margin-bottom:30px}
+.step-section .steps li .wrapper .number{font-family:"Piazzolla",serif;display:block;height:80px;width:80px;border:1px solid #f7a81b;color:#f7a81b;border-radius:50%;line-height:64px;text-align:center;font-weight:bold;font-size:60px;margin-bottom:30px}
 .step-section .steps li:hover{-webkit-transition:all .3s ease-out;transition:all .3s ease-out;background:#f7a81b}
 .step-section .steps li:hover .wrapper .number{color:#fff;border:1px solid #fff}
 .pricing-section{background:#f5f5f5;padding-top:100px;padding-bottom:100px}
@@ -1366,7 +1366,7 @@ footer .footer-logo img{max-width:180px}
 footer .colophon{color:#666}
 footer .footer-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-padding-start:0;padding-inline-start:0;padding:0}
 footer .footer-menu li{margin-bottom:20px;list-style:none;-ms-flex-preferred-size:100%;flex-basis:100%}
-footer .footer-menu li a{font-size:16px;font-weight:600;text-decoration:none}
+footer .footer-menu li a{font-size:18px;font-weight:600;text-decoration:none}
 footer .footer-menu li a:hover{text-decoration:underline}
 footer .social-icons{-webkit-padding-start:0;padding-inline-start:0;padding:0;margin:30px 0;display:-webkit-box;display:-ms-flexbox;display:flex}
 footer .social-icons li{margin-right:15px;list-style:none}

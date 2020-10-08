@@ -410,13 +410,14 @@ body {
 					text-decoration: underline;
 				}
 				.number {
+					font-family: $pia;
 					display: block;
 					height: 80px;
 					width: 80px;
 					border: 1px solid $main_orange;
 					color: $main_orange;
 					border-radius: 50%;
-					line-height: 90px;
+					line-height: 64px;
 					text-align: center;
 					font-weight: bold;
 					font-size: 60px;
@@ -487,7 +488,7 @@ footer {
 			list-style: none;
 			flex-basis: 100%;
 			a {
-				font-size: 16px;
+				font-size: 18px;
 				font-weight: 600;
 				text-decoration: none;
 				&:hover {
