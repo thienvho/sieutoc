@@ -257,7 +257,7 @@ body {
 			content: '';
 			background: #fff;
 			border-bottom: 1px solid $lighter_gray;
-			height: 100%;
+			height: calc(100% + 1px);
 			width: 50%;
 			position: absolute;
 			bottom: -1px;
@@ -268,7 +268,7 @@ body {
 			content: '';
 			background: #fff;
 			border-bottom: 1px solid $lighter_gray;
-			height: 100%;
+			height: calc(100% + 1px);
 			width: 50%;
 			position: absolute;
 			bottom: -1px;
@@ -290,9 +290,9 @@ body {
 		}
 	}
 	.main-heading {
-		line-height: 60px;
+		line-height: 50px;
 		@media (min-width: 992px) {
-			line-height: 75px;
+			line-height: 70px;
 		}
 
 	}
