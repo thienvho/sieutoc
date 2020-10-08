@@ -92,7 +92,7 @@ body {
 	background: #fff;
 	max-width: 1440px;
 	padding: 15px 10px;
-	box-shadow: 0 0 20px 20px rgba(0,0,0,.15);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 	.navbar-toggler {
 		border: none;
 		border-radius: 0;
@@ -105,10 +105,12 @@ body {
 	.navbar-brand {
 		padding: 0;
 		margin-right: 0;
-		position: absolute;
-		top: 6px;
-		left: 50%;
-		margin-left: -60px;
+		margin-left: 15px;
+		margin-right: 15px;
+		// position: absolute;
+		// top: 6px;
+		// left: 50%;
+		// margin-left: -60px;
 		transition: all .4s ease-out;
 		img {
 			transition: all .4s ease-out;
@@ -117,6 +119,10 @@ body {
 			@media (min-width: 992px) {
 				max-width: 220px;
 			}
+		}
+		.slogan {
+			color: $main_orange;
+			font-size: 1.25rem;
 		}
 
 		@media (min-width: 992px) {
@@ -134,6 +140,9 @@ body {
 			
 			&:last-child {
 				margin-right: 0;
+				.nav-link {
+					border-bottom: none;
+				}
 			}
 			&.slogan {
 				color: $main_orange;
@@ -154,6 +163,7 @@ body {
 				padding-left: 0;
 				padding-right: 0;
 				border-bottom: 1px solid $lighter_gray;
+				
 				&:hover {
 					color: $main_orange;
 				}
@@ -232,8 +242,7 @@ body {
 
 	@media (min-width: 992px) { 
 		/*for main nav*/
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding: 55px 20px;
 		box-shadow: none;
 		border-bottom: 1px solid $lighter_gray;
 		&.__active {
@@ -250,31 +259,34 @@ body {
 					max-width: 120px;
 					height: auto;
 				}
+				.slogan {
+					display: none !important;
+				}
 			}
 		}
 		// end active state
-		&:before {
-			content: '';
-			background: #fff;
-			border-bottom: 1px solid $lighter_gray;
-			height: calc(100% + 1px);
-			width: 50%;
-			position: absolute;
-			bottom: -1px;
-			left: -50%;
-			z-index: 0;
-		}
-		&:after {
-			content: '';
-			background: #fff;
-			border-bottom: 1px solid $lighter_gray;
-			height: calc(100% + 1px);
-			width: 50%;
-			position: absolute;
-			bottom: -1px;
-			right: -50%;
-			z-index: 0;
-		}
+		// &:before {
+		// 	content: '';
+		// 	background: #fff;
+		// 	border-bottom: 1px solid $lighter_gray;
+		// 	height: calc(100% + 1px);
+		// 	width: 50%;
+		// 	position: absolute;
+		// 	bottom: -1px;
+		// 	left: -50%;
+		// 	z-index: 0;
+		// }
+		// &:after {
+		// 	content: '';
+		// 	background: #fff;
+		// 	border-bottom: 1px solid $lighter_gray;
+		// 	height: calc(100% + 1px);
+		// 	width: 50%;
+		// 	position: absolute;
+		// 	bottom: -1px;
+		// 	right: -50%;
+		// 	z-index: 0;
+		// }
 	}
 }
 

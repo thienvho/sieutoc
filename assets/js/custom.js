@@ -1,16 +1,16 @@
 "use strict";
 
-jQuery(function ($) {
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    var menu = $(".main-nav");
-
-    if (scroll >= 100) {
-      menu.addClass("__active");
-    } else {
-      menu.removeClass('__active');
-    }
-  }); //missing );
+jQuery(function ($) {// adding __active class to navbar on scroll
+  // $(window).scroll(function() {    
+  //   var scroll = $(window).scrollTop();
+  //   var menu = $(".main-nav");
+  //   if (scroll >= 100) {
+  //     menu.addClass("__active");
+  //   }
+  //   else {
+  //     menu.removeClass('__active');
+  //   }
+  // });
   //hamburger button toggler
   // var menu = document.querySelector('#main-nav');
   // var _toggler = document.querySelector('#hambuger-button');
