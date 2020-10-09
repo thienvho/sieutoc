@@ -303,11 +303,12 @@ body {
 
 // hero-section
 .hero-section {
-	min-height: 660px;
+	min-height: 460px;
 	padding-top: 100px;
 	background: $lighter_gray;
 	.heading-container {
 		@media (min-width: 992px) {
+			min-height: 660px;
 			padding-top: 50px;
 			padding-bottom: 50px;
 		}
