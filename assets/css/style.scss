@@ -80,7 +80,9 @@ body {
 // buttons
 .button {
 	padding: .875rem 2rem .75rem 2rem;
-	border: 2px solid $main_blue;
+	border-color: $main_blue;
+	border-width: 2px;
+	border-style: solid;
 	color: $main_blue;
 	font-weight: bold;
 	font-size: 18px;
@@ -88,10 +90,20 @@ body {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: block;
+	transition: all .1s ease-out;
+	&._white {
+		border-color: $white !important;
+		color: $white;
+		&:hover {
+			background: $white;
+			color: $main_blue;
+		}
+	}
 	&:hover {
 		text-decoration: none;
 		background: $main_blue;
-		color: #fff;
+		color: $white;
+		transition: all .1s ease-out;
 	}
 	@media (min-width: 992px) {
 		display: inline-block;
@@ -100,7 +112,7 @@ body {
 // Navigation
 .main-nav {
 	transition: all .4s ease-out;
-	background: #fff;
+	background: $white;
 	max-width: 1440px;
 	padding: 15px 10px;
 	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
@@ -233,12 +245,12 @@ body {
 							border-left: 8px solid transparent;;
 							border-right: 8px solid transparent;
 							border-top: none;
-							border-bottom: 8px solid #fff;
+							border-bottom: 8px solid $white;
 						}
 					}
 				}
 				@media (min-width: 992px) {
-					background: #fff;
+					background: $white;
 					border-radius: 4px;
 					box-shadow: 0 -5px 30px rgba(0,0,0,.15);
 				}
@@ -259,7 +271,7 @@ body {
 		&.__active {
 			padding-top: 15px;
 			padding-bottom: 15px;
-			background: #fff;
+			background: $white;
 			box-shadow: 0 0 20px 5px rgba(0,0,0,.07);
 			.navbar-brand {
 				top: 9px;
@@ -278,7 +290,7 @@ body {
 		// end active state
 		// &:before {
 		// 	content: '';
-		// 	background: #fff;
+		// 	background: $white;
 		// 	border-bottom: 1px solid $lighter_gray;
 		// 	height: calc(100% + 1px);
 		// 	width: 50%;
@@ -289,7 +301,7 @@ body {
 		// }
 		// &:after {
 		// 	content: '';
-		// 	background: #fff;
+		// 	background: $white;
 		// 	border-bottom: 1px solid $lighter_gray;
 		// 	height: calc(100% + 1px);
 		// 	width: 50%;
@@ -404,10 +416,10 @@ body {
 				flex-direction: column;
 				font-size: 20px;
 				font-weight: medium;
-				color: #fff;
+				color: $white;
 
 				a {
-					color: #fff;
+					color: $white;
 					text-decoration: underline;
 				}
 				.number {
@@ -430,8 +442,8 @@ body {
 				background: $main_orange;
 				.wrapper {
 					.number {
-						color: #fff;
-						border: 1px solid #fff;
+						color: $white;
+						border: 1px solid $white;
 					}
 				}
 			}
@@ -456,12 +468,12 @@ footer {
 	padding-bottom: 60px;
 
 	p, a {
-		color: #fff;
+		color: $white;
 	}
 	a {
 		text-decoration: underline;
 		&:hover {
-			color: #fff;
+			color: $white;
 			text-decoration: none;
 		}
 	}
@@ -515,7 +527,7 @@ footer {
 				display: block;
 				height: 36px;
 				width: 36px;
-				border: 1px solid #fff;
+				border: 1px solid $white;
 				border-radius: 50%;
 				background-size: auto 20px;
 				background-position: center center;

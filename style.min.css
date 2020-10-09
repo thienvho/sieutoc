@@ -1320,8 +1320,10 @@ body{font-family:"Epilogue",sans-serif,arial;font-size:16px;line-height:1.5;colo
 .bg-main-orange{background:#f7a81b}
 .bg-main-blue{background:#1a5dab}
 .inner{max-width:1440px}
-.button{padding:.875rem 2rem .75rem 2rem;border:2px solid #1a5dab;color:#1a5dab;font-weight:bold;font-size:18px;line-height:18px;letter-spacing:1px;text-transform:uppercase;display:block}
-.button:hover{text-decoration:none;background:#1a5dab;color:#fff}
+.button{padding:.875rem 2rem .75rem 2rem;border-color:#1a5dab;border-width:2px;border-style:solid;color:#1a5dab;font-weight:bold;font-size:18px;line-height:18px;letter-spacing:1px;text-transform:uppercase;display:block;-webkit-transition:all .1s ease-out;transition:all .1s ease-out}
+.button._white{border-color:#fff !important;color:#fff}
+.button._white:hover{background:#fff;color:#1a5dab}
+.button:hover{text-decoration:none;background:#1a5dab;color:#fff;-webkit-transition:all .1s ease-out;transition:all .1s ease-out}
 .main-nav{-webkit-transition:all .4s ease-out;transition:all .4s ease-out;background:#fff;max-width:1440px;padding:15px 10px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.1);box-shadow:0 0 10px 0 rgba(0,0,0,0.1)}
 .main-nav .navbar-toggler{border:0;border-radius:0;padding:0;outline:0}
 .main-nav .navbar-toggler .navbar-toggler-icon{width:32px}
